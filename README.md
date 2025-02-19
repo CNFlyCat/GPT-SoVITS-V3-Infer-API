@@ -14,6 +14,8 @@ See `api-v3.py`.
 
 See [api-example.py](example.ipynb) or [main.py]() example code.
 
+You must set model path in `api-config.yaml` file!
+
 ## Prepare the environment
 
 You can use PDM to install this project quickly.
