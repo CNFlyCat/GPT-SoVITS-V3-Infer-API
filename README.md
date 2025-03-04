@@ -27,7 +27,7 @@ If you want to run it on CPU, you must remove this in `pyproject.toml`.
 [[tool.pdm.source]]
 name = "pytorch-cuda"
 url = "https://download.pytorch.org/whl/cu118"
-include_packages = ["torch"]
+include_packages = ["torch","torchaudio","torchvision"]
 exclude_packages = ["*"]
 ```
 
