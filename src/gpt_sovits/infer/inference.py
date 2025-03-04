@@ -411,7 +411,7 @@ class GPTSoVITSInference:
     def init_bigvgan(self):
         global model
         model = bigvgan.BigVGAN.from_pretrained(
-            "%s./pretrained_models/models--nvidia--bigvgan_v2_24khz_100band_256x" % (now_dir,),
+            "%s/pretrained_models/models--nvidia--bigvgan_v2_24khz_100band_256x" % (now_dir,),
             use_cuda_kernel=False)  # if True, RuntimeError: Ninja is required to load C++ extensions
         # remove weight norm in the model and set to eval mode
         model.remove_weight_norm()

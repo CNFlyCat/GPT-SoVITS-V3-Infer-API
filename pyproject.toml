@@ -23,11 +23,11 @@ dependencies = [
     "pydantic>=2.7.4",
     "sounddevice>=0.5.1",
     "ultralytics>=8.3.75",
-    "torch==2.0.0",
-    "torchvision==0.15.1",
-    "torchaudio==2.0.0",
+    "torch>=2.0.0",
+    "torchvision>=0.15.1",
+    "torchaudio>=2.0.0",
     "x-transformers>=2.0.4",
-    "pytorch-lightning==2.1.3",
+    "pytorch-lightning>=2.1.3",
     "fastapi>=0.115.8",
     "uvicorn>=0.34.0",
 ]
@@ -50,5 +50,5 @@ distribution = true
 [[tool.pdm.source]]
 name = "pytorch-cuda"
 url = "https://download.pytorch.org/whl/cu118"
-include_packages = ["torch"]
+include_packages = ["torch","torchaudio","torchvision"]
 exclude_packages = ["*"]
